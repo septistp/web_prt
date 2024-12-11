@@ -1,46 +1,28 @@
-.hero-section {
-    position: relative;
-    top: 50vh;
-    overflow: hidden;
-    font: 900 2vw/1 sans-serif;
-    min-height: 10vh;
-}
-/* marquee */
-.marquee-container {
-    overflow: hidden;
+:root {
+    --primary-color: navy;
 }
 
-.marquee {
-    display: flex;
-    position: relative;
+html {
+    scroll-behavior: smooth;
 }
 
-.marquee-content {
-    display: flex;
-    flex-shrink: 0;
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
 }
 
-.marquee-item {
-    font-size: 5em;
-    white-space: nowrap;
-    text-transform: uppercase;
-    padding: 0 20px;
+/* Track */
+::-webkit-scrollbar-track {
+    display: none;
 }
 
-/* pricing */
-.check-icon::before {
-    content: "\2022";
-    color: #4F46E5;
-    font-size: 2.5em;
-    line-height: 0;
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--primary-color);
 }
 
-.pricing-column {
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.feature-row:not(:last-child) {
-    border-bottom: 2px solid black;
-    text-align: center;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
 }
