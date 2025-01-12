@@ -26,3 +26,9 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-color);
 }
+
+i {
+    color: #4CAF50; /* Warna ikon hijau */
+    font-size: 1.5em; /* Ukuran ikon */
+    margin-left: 8px;
+}
